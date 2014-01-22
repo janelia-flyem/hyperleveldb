@@ -1,6 +1,6 @@
 package levigo
 
-// #cgo LDFLAGS: ${BUILDEM_LIB_DIR}/lib${DVID_BACKEND}.a
+// #cgo LDFLAGS: ${BUILDEM_LIB_DIR}/lib${DVID_BACKEND}.${LIB_EXT}
 // #cgo CFLAGS: -I${BUILDEM_INCLUDE_DIR}
 // #include <stdlib.h>
 // #include "${DVID_BACKEND}/c.h"

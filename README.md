@@ -7,6 +7,10 @@ web](http://godoc.org/github.com/jmhodges/levigo).
 
 Questions answered at `golang-nuts@googlegroups.com`.
 
+This fork uses [buildem](http://github.com/janelia-flyem/buildem) to customize
+the build of levigo for a chosen leveldb-compatible storage engine (e.g., HyperLevelDB)
+and also allow static linking.
+
 ## Building
 
 You'll need the shared library build of
