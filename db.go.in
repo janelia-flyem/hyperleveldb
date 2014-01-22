@@ -1,9 +1,10 @@
 package levigo
 
 /*
-#cgo LDFLAGS: -lhyperleveldb
+#cgo LDFLAGS: ${BUILDEM_LIB_DIR}/lib${DVID_BACKEND}.a
+#cgo CFLAGS: -I${BUILDEM_INCLUDE_DIR}
 #include <stdlib.h>
-#include "hyperleveldb/c.h"
+#include "${DVID_BACKEND}/c.h"
 
 // This function exists only to clean up lack-of-const warnings when
 // leveldb_approximate_sizes is called from Go-land.

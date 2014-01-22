@@ -1,6 +1,7 @@
 package levigo
 
-// #include "hyperleveldb/c.h"
+// #cgo CFLAGS: -I${BUILDEM_INCLUDE_DIR}
+// #include "${DVID_BACKEND}/c.h"
 import "C"
 
 func boolToUchar(b bool) C.uchar {

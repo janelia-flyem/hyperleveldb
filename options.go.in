@@ -1,7 +1,8 @@
 package levigo
 
-// #cgo LDFLAGS: -lhyperleveldb
-// #include "hyperleveldb/c.h"
+// #cgo LDFLAGS: ${BUILDEM_LIB_DIR}/lib${DVID_BACKEND}.a
+// #cgo CFLAGS: -I${BUILDEM_INCLUDE_DIR}
+// #include "${DVID_BACKEND}/c.h"
 import "C"
 
 // CompressionOpt is a value for Options.SetCompression.

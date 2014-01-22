@@ -1,8 +1,9 @@
 package levigo
 
-// #cgo LDFLAGS: -lhyperleveldb
+// #cgo LDFLAGS: ${BUILDEM_LIB_DIR}/lib${DVID_BACKEND}.a
+// #cgo CFLAGS: -I${BUILDEM_INCLUDE_DIR}
 // #include <stdlib.h>
-// #include "hyperleveldb/c.h"
+// #include "${DVID_BACKEND}/c.h"
 import "C"
 
 // FilterPolicy is a factory type that allows the LevelDB database to create a
