@@ -4,3 +4,12 @@
 *.out
 _testmain.go
 _obj
+batch.go
+cache.go
+comparator.go
+conv.go
+db.go
+env.go
+filterpolicy.go
+iterator.go
+options.go
